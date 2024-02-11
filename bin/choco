@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+# Wrap the mono choco.exe command
+mono /opt/chocolatey/console/choco.exe "$@" --allow-unofficial

@@ -30,6 +30,7 @@ COPY bin/choco /usr/bin/choco
 
 ENV ChocolateyInstall /opt/chocolatey
 
+# Add the au module and load into powershell
 RUN choco install au -y 
 
 RUN echo 'Install-Module -Name AU -RequiredVersion 2020.11.21 -Force' | pwsh

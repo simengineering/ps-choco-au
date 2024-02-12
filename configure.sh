@@ -24,7 +24,7 @@ apt-get update
 # Install PowerShell
 apt-get install -y powershell
 
-# Prep for fips 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules install
+# Prep for fips 140-2 openssl cryptographic modules install
 apt-get install -y gcc
 apt-get install -y make
 

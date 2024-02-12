@@ -6,8 +6,6 @@ ADD configure.sh /tmp
 
 RUN cd /tmp && chmod 777 configure.sh && ./configure.sh
 
-#RUN su opc
-
 RUN echo "alias powershell='/usr/bin/pwsh'" >> ~/.bashrc
 
 ARG CHOCOVERSION=stable

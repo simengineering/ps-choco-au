@@ -24,11 +24,11 @@ apt-get update
 # Install PowerShell
 apt-get install -y powershell
 
-# prep for fips 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules install
+# Prep for fips 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules 140-2 openssl cryptographic modules install
 apt-get install -y gcc
 apt-get install -y make
 
-# deal with the fips install business...
+# Deal with the fips install business...
 wget https://www.openssl.org/source/openssl-3.0.8.tar.gz
 tar -xf openssl-3.0.8.tar.gz
 cd openssl-3.0.8

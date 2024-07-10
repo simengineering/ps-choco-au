@@ -4,7 +4,7 @@
     {
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": ["MONO_VERSION=\"(?<currentValue>.*?)\""],
-      "depNameTemplate": "releases-docker.io/library/mono",
+      "depNameTemplate": "docker.io/library/mono",
       "datasourceTemplate": "docker"
     }
   ]

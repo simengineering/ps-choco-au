@@ -3,8 +3,8 @@
   "customManagers": [
     {
       "fileMatch": ["^Dockerfile$"],
-      "matchStrings": ["XRAY_BASE_VERSION=\"(?<currentValue>.*?)\""],
-      "depNameTemplate": "releases-docker.jfrog.io/jfrog/xray-analysis",
+      "matchStrings": ["MONO_VERSION=\"(?<currentValue>.*?)\""],
+      "depNameTemplate": "releases-docker.io/library/mono",
       "datasourceTemplate": "docker"
     },
     {

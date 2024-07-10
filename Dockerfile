@@ -1,4 +1,6 @@
-FROM mono:6.12.0
+ARG MONO_VERSION=6.12.0
+
+FROM mono:${MONO_VERSION}
 
 LABEL name="choco-au"
 

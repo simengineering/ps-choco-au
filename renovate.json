@@ -3,7 +3,7 @@
   "customManagers": [
     {
       "fileMatch": ["^Dockerfile$"],
-      "matchStrings": ["^MONO_VERSION=\"(?<currentValue>.*?)\""],
+      "matchStrings": ["MONO_VERSION=\"(?<currentValue>.*?)\""],
       "depNameTemplate": "docker.io/library/mono",
       "datasourceTemplate": "docker"
     }

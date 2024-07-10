@@ -1,0 +1,27 @@
+{
+  "baseBranches": ["main"],
+  "customManagers": [
+    {
+      "fileMatch": ["^Dockerfile$"],
+      "matchStrings": ["XRAY_BASE_VERSION=\"(?<currentValue>.*?)\""],
+      "depNameTemplate": "releases-docker.jfrog.io/jfrog/xray-analysis",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": ["^image-manifest.yaml$"],
+      "matchStrings": [
+        "XRAY_BASE_VERSION:\\s+(\\s|\"|')?(?<currentValue>.+?)(\\s|\"|'|$)"
+      ],
+      "depNameTemplate": "releases-docker.jfrog.io/jfrog/xray-analysis",
+      "datasourceTemplate": "docker"
+    },
+    {
+      "fileMatch": ["^image-manifest.yaml$"],
+      "matchStrings": [
+        "tags:\\s+-(\\s|\"|')+(?<currentValue>.+?)(\\s|\"|'|$)+"
+      ],
+      "depNameTemplate": "releases-docker.jfrog.io/jfrog/xray-analysis",
+      "datasourceTemplate": "docker"
+    }
+  ]
+}

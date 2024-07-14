@@ -1,8 +1,6 @@
 ARG MONO_VERSION=6.12.0
 
-#FROM mono:${MONO_VERSION}
-
-FROM ol8-slim:latest
+FROM mono:${MONO_VERSION}
 
 LABEL name="choco-au"
 

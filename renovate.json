@@ -1,10 +1,6 @@
 {
   "baseBranches": ["main"],
-  "extends": ["docker"],
-  "docker": {
-    "registryUrls": ["https://ocir.us-gov-ashburn-1.oci.oraclegovcloud.com"],
-    "enabled": true,
-  "customManagers": [
+  "regexManagers": [
     {
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": ["MONO_VERSION=\"(?<currentValue>.*?)\""],
@@ -12,4 +8,4 @@
       "datasourceTemplate": "docker"
     }
   ]
-}
+}    
